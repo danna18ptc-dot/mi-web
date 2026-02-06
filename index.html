@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC Dental | Consultorio Dental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>ABC Dental</h1>
+  <p>Consultorio Dental · Atención profesional y confiable</p>
+  <a href="https://wa.me/522294009101" class="btn-principal">
+    Agendar cita por WhatsApp
+  </a>
+</header>
+
+<section>
+  <h2>Servicios</h2>
+  <div class="cards">
+    <div class="card">Limpieza Bucal</div>
+    <div class="card">Ortodoncia</div>
+    <div class="card">Blanqueamiento Dental</div>
+    <div class="card">Extracciones</div>
+    <div class="card">Resinas y Curaciones</div>
+    <div class="card">Carillas</div>
+    <div class="card">Prótesis Removibles</div>
+    <div class="card">Prótesis Totales</div>
+  </div>
+</section>
+
+<section class="sobre-pro">
+  <h2>Sobre Nosotros</h2>
+  <div class="sobre-grid">
+    <div class="sobre-texto">
+      <p>
+        En <strong>ABC Dental</strong> brindamos atención odontológica con altos
+        estándares de calidad, en un ambiente profesional, cómodo y confiable.
+      </p>
+      <p>
+        Nuestro compromiso es cuidar tu salud y estética dental con trato humano
+        y tecnología actual.
+      </p>
+    </div>
+
+   <div class="sobre-galeria">
+        <img src="img/consultorio1.jpeg" alt="Consultorio dental">
+        <img src="img/consultorio2.jpeg" alt="Área de atención">
+        <img src="img/consultorio3.jpeg" alt="Equipo dental">
+        <img src="img/consultorio4.jpeg" alt="Recepción">
+    </div>
+  </div>
+</section>
+
+<section class="contacto-simple">
+  <h2>Contacto</h2>
+
+  <p>
+    📍 Emilio de La Fuente 27, Centro, Venecia<br>
+    95580 Villa Azueta, Veracruz
+  </p>
+
+  <p>
+    📞 WhatsApp: <strong>+52 229 400 9101</strong>
+  </p>
+
+  <a href="https://www.facebook.com/share/17u3voE9J6/?mibextid=wwXIfr"
+     target="_blank" class="btn-facebook">
+    Visítanos en Facebook
+  </a>
+</section>
+
+<footer>
+  © 2026 ABC Dental · Villa Azueta, Veracruz
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/522294009101" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Asistente virtual -->
+<div class="assistant-container">
+  <div class="assistant-chat" id="assistantChat">
+    <div class="assistant-header">
+      Asistente ABC Dental
+      <span onclick="toggleAssistant()">✕</span>
+    </div>
+
+    <div class="assistant-messages" id="assistantMessages">
+      <div class="bot-message">
+        ¡Hola! 👋 Soy el asistente virtual de ABC Dental.<br>
+        Puedo ayudarte con horarios, ubicación y citas.
+      </div>
+    </div>
+
+    <div class="assistant-input">
+      <input id="assistantInput" placeholder="Escribe tu mensaje...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <div class="assistant-float" onclick="toggleAssistant()">🤖</div>
+</div>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC Dental | Consultorio Dental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <h1>ABC Dental</h1>
+    <p>Consultorio Dental · Atención profesional y confiable</p>
+    <a href="https://wa.me/522294009101" class="btn-principal">
+      Agendar cita por WhatsApp
+    </a>
+  </header>
+
+  <!-- SERVICIOS -->
+  <section>
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">Limpieza Bucal</div>
+      <div class="card">Ortodoncia</div>
+      <div class="card">Blanqueamiento Dental</div>
+      <div class="card">Extracciones</div>
+      <div class="card">Resinas y Curaciones</div>
+      <div class="card">Carillas</div>
+      <div class="card">Prótesis Removibles</div>
+      <div class="card">Prótesis Totales</div>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="sobre-pro">
+    <h2>Sobre Nosotros</h2>
+
+    <div class="sobre-grid">
+      <div class="sobre-texto">
+        <p>
+          En <strong>ABC Dental</strong> brindamos atención odontológica con altos
+          estándares de calidad, cuidando cada detalle para ofrecer tratamientos
+          seguros, confiables y personalizados.
+        </p>
+        <p>
+          Nuestro compromiso es la salud y estética dental de nuestros pacientes,
+          en un ambiente limpio, profesional y de confianza.
+        </p>
+      </div>
+
+      <div class="sobre-galeria">
+        <img src="img/consultorio1.jpg" alt="Consultorio dental">
+        <img src="img/consultorio2.jpg" alt="Área de atención">
+        <img src="img/consultorio3.jpg" alt="Equipo dental">
+        <img src="img/consultorio4.jpg" alt="Recepción">
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto-simple">
+    <h2>Contacto</h2>
+    <p>
+      📍 Emilio de La Fuente 27, Centro, Venecia<br>
+      95580 Villa Azueta, Veracruz
+    </p>
+    <p>
+      📞 WhatsApp: <strong>+52 229 400 9101</strong>
+    </p>
+
+    <a href="https://www.facebook.com/share/17u3voE9J6/?mibextid=wwXIfr"
+       target="_blank" class="btn-facebook">
+      Visítanos en Facebook
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ABC Dental · Villa Azueta, Veracruz</p>
+  </footer>
+
+  <!-- BOTÓN WHATSAPP -->
+  <a href="https://wa.me/522294009101" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- ASISTENTE VIRTUAL -->
+  <div class="assistant-button" onclick="toggleAssistant()">
+    🤖
+  </div>
+
+  <div class="assistant-chat" id="assistantChat">
+    <div class="assistant-header">
+      Asistente ABC Dental
+      <span onclick="toggleAssistant()">✖</span>
+    </div>
+
+    <div class="assistant-messages" id="assistantMessages">
+      <div class="bot-message">
+        👋 Hola, soy tu asistente virtual.<br>
+        Puedo ayudarte a agendar tu cita 😊
+      </div>
+    </div>
+
+    <div class="assistant-input">
+      <input type="text" id="assistantInput" placeholder="Escribe aquí...">
+      <button onclick="sendMessage()">Enviar</button>
+    </div>
+  </div>
+
+  <!-- SCRIPT ASISTENTE PREMIUM -->
+<script>
+  let step = null;
+  let name = "";
+  let day = "";
+  let hour = "";
+
+  // 🔗 URL de tu Apps Script (NO CAMBIAR)
+  const API_URL = "https://script.google.com/macros/s/AKfycbyEWXW4UDQ_TIWKC9-mg9XCL-4VkeV9U_Ha2oDa36V8rc0UuBe1WykXOPNd4Un3G01cZA/exec";
+
+  function toggleAssistant() {
+    const chat = document.getElementById("assistantChat");
+    chat.style.display = chat.style.display === "flex" ? "none" : "flex";
+  }
+
+  function sendMessage() {
+    const input = document.getElementById("assistantInput");
+    const text = input.value.trim();
+    if (!text) return;
+
+    addMessage(text, "user-message");
+    input.value = "";
+
+    setTimeout(() => {
+      botResponse(text);
+    }, 300);
+  }
+
+  function addMessage(text, className) {
+    const messages = document.getElementById("assistantMessages");
+    const msg = document.createElement("div");
+    msg.className = className;
+    msg.innerText = text;
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+  }
+
+  function botResponse(text) {
+    const msg = text.toLowerCase();
+
+    // 👋 DESPEDIDA
+    if (msg.includes("adios") || msg.includes("gracias")) {
+      reset();
+      addMessage("😊 Gracias por contactarnos.\nTe esperamos en ABC Dental.", "bot-message");
+      setTimeout(toggleAssistant, 1200);
+      return;
+    }
+
+    // PASO 1: NOMBRE
+    if (step === "name") {
+      name = text;
+      step = "day";
+      addMessage(
+        "Gracias, " + name + " 😊\n📅 Indica la fecha de tu cita\n(Formato: YYYY-MM-DD)",
+        "bot-message"
+      );
+      return;
+    }
+
+    // PASO 2: FECHA
+    if (step === "day") {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(text)) {
+        addMessage(
+          "⚠️ Formato incorrecto.\nUsa: YYYY-MM-DD\nEjemplo: 2026-02-10",
+          "bot-message"
+        );
+        return;
+      }
+      day = text;
+      step = "hour";
+      addMessage(
+        "Perfecto 🗓️\n⏰ ¿A qué hora?\n(Solo escribe el número: 8 a 18)",
+        "bot-message"
+      );
+      return;
+    }
+
+    // PASO 3: HORA (ARREGLADO)
+    if (step === "hour") {
+      const h = parseInt(text);
+
+      if (isNaN(h) || h < 8 || h > 18) {
+        addMessage(
+          "⛔ Hora no válida.\nEscribe solo un número entre 8 y 18.",
+          "bot-message"
+        );
+        return;
+      }
+
+      hour = h;
+      addMessage("⏳ Revisando disponibilidad...", "bot-message");
+      checkAvailability();
+      return;
+    }
+
+    // INICIAR CITA
+    if (msg.includes("cita") || msg.includes("agendar")) {
+      step = "name";
+      addMessage("🦷 Con gusto 😊\nDime tu nombre para agendar la cita:", "bot-message");
+      return;
+    }
+
+    // HORARIO
+    if (msg.includes("horario")) {
+      addMessage("⏰ Atendemos de lunes a sábado de 8:00 a.m. a 6:00 p.m.", "bot-message");
+      return;
+    }
+
+    // DIRECCIÓN
+    if (msg.includes("direccion") || msg.includes("ubicacion")) {
+      addMessage(
+        "📍 Emilio de La Fuente 27, Centro\n95580 Villa Azueta, Veracruz.",
+        "bot-message"
+      );
+      return;
+    }
+
+    // MENÚ
+    addMessage(
+      "🤍 Puedo ayudarte con:\n• Agendar cita\n• Horarios\n• Dirección",
+      "bot-message"
+    );
+  }
+
+  // 🔎 VERIFICAR DISPONIBILIDAD
+  function checkAvailability() {
+    fetch(`${API_URL}?action=check&day=${day}&hour=${hour}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.occupied) {
+          addMessage(
+            "⛔ Ese horario ya está ocupado.\nPor favor elige otra hora.",
+            "bot-message"
+          );
+        } else {
+          saveAppointment();
+        }
+      })
+      .catch(() => {
+        addMessage(
+          "⚠️ No pude verificar el horario.\nIntenta nuevamente.",
+          "bot-message"
+        );
+      });
+  }
+
+  // 💾 GUARDAR CITA
+  function saveAppointment() {
+    fetch(API_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "save",
+        name: name,
+        day: day,
+        hour: hour
+      })
+    })
+    .then(() => {
+      sendToWhatsApp();
+      addMessage(
+        "✅ Tu cita quedó registrada:\n\n" +
+        "👤 " + name + "\n📅 " + day + "\n⏰ " + hour + ":00",
+        "bot-message"
+      );
+      reset();
+    });
+  }
+
+  // 📲 WHATSAPP
+  function sendToWhatsApp() {
+    const text =
+      "Hola, quiero confirmar mi cita en ABC Dental:\n\n" +
+      "👤 Nombre: " + name + "\n" +
+      "📅 Fecha: " + day + "\n" +
+      "⏰ Hora: " + hour + ":00";
+
+    window.open(
+      "https://wa.me/522294009101?text=" + encodeURIComponent(text),
+      "_blank"
+    );
+  }
+
+  function reset() {
+    step = null;
+    name = "";
+    day = "";
+    hour = "";
+  }
+</script>
+
+</body>
+</html>

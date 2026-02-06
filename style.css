@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #2f8f83, #6fcfc3);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.btn-principal {
+  background-color: white;
+  color: #2f8f83;
+  padding: 15px 36px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SECCIONES */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 90px 25px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  color: #2f8f83;
+  margin-bottom: 45px;
+}
+
+/* SERVICIOS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* SOBRE */
+.sobre-pro {
+  background-color: #f9f9f9;
+}
+
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  text-align: left;
+}
+
+.sobre-texto p {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.sobre-galeria {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.sobre-galeria img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* CONTACTO */
+.contacto-simple p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.btn-facebook {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 32px;
+  background-color: #1877f2;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+  background-color: #efefef;
+  padding: 25px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* WHATSAPP */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+/* ASISTENTE */
+.assistant-container {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 1000;
+}
+
+.assistant-float {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2f8f83, #6fcfc3);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+}
+
+.assistant-chat {
+  width: 320px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.assistant-header {
+  background: #2f8f83;
+  color: white;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.assistant-messages {
+  padding: 15px;
+  height: 260px;
+  overflow-y: auto;
+  font-size: 14px;
+}
+
+.bot-message {
+  background: #f1f1f1;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.user-message {
+  background: #2f8f83;
+  color: white;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  margin-left: auto;
+}
+
+.assistant-input {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.assistant-input input {
+  flex: 1;
+  border: none;
+  padding: 12px;
+  outline: none;
+}
+
+.assistant-input button {
+  background: #2f8f83;
+  color: white;
+  border: none;
+  padding: 0 18px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .sobre-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
