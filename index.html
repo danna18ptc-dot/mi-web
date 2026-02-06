@@ -19,7 +19,7 @@
 <header class="hero">
   <h1>ABC Dental</h1>
   <p>Consultorio Dental · Atención profesional y confiable</p>
-  <a href="https://wa.me/522294009101" class="btn-principal">Agendar cita por WhatsApp</a>
+  <a href="https://wa.me/522294009101?text=Hola%20ABC%20Dental,%20quiero%20información" class="btn-principal">Agendar cita por WhatsApp</a>
 </header>
 
 <section>
@@ -44,7 +44,7 @@
         En <strong>ABC Dental</strong> ofrecemos atención odontológica de alta calidad con un enfoque totalmente personalizado. Cada paciente recibe cuidados diseñados para su salud y estética dental, en un ambiente profesional, cómodo y confiable.
       </p>
       <p>
-        La doctora <strong>Angélica María Bravo Castro</strong>, especialista en odontología integral y estética dental, combina experiencia y dedicación para garantizar tratamientos seguros y efectivos, siempre priorizando la comodidad y bienestar de quienes nos visitan.
+        Angélica María Bravo Castro, especialista en odontología integral y estética dental, combina experiencia y dedicación para garantizar tratamientos seguros y efectivos, priorizando siempre la comodidad y bienestar de quienes nos visitan.
       </p>
       <p>
         Nos apasiona brindar cuidados modernos y eficaces, combinando la última tecnología con un trato humano y cercano. En <strong>ABC Dental</strong>, tu sonrisa es nuestra máxima prioridad.
@@ -62,14 +62,14 @@
 <section class="contacto-simple">
   <h2>Contacto</h2>
   <p>📍 <a href="https://www.google.com/maps/place/Emilio+de+La+Fuente+27,+Centro,+Venecia,+95580+Villa+Azueta,+Veracruz" target="_blank">Emilio de La Fuente 27, Centro, Venecia, 95580 Villa Azueta, Veracruz</a></p>
-  <p>📞 <a href="https://wa.me/522294009101" target="_blank">+52 229 400 9101</a></p>
+  <p>📞 <a href="https://wa.me/522294009101?text=Hola%20ABC%20Dental,%20quiero%20información" target="_blank">+52 229 400 9101</a></p>
   <a href="https://www.facebook.com/share/17u3voE9J6/?mibextid=wwXIfr" target="_blank" class="btn-facebook">Visítanos en Facebook</a>
 </section>
 
-<footer>©️ 2026 ABC Dental · Villa Azueta, Veracruz</footer>
+<footer style="text-align:center;">©️ 2026 ABC Dental · Villa Azueta, Veracruz</footer>
 
 <!-- WhatsApp flotante -->
-<a href="https://wa.me/522294009101" class="whatsapp-float" target="_blank">
+<a href="https://wa.me/522294009101?text=Hola%20ABC%20Dental,%20quiero%20información" class="whatsapp-float" target="_blank">
   <i class="fab fa-whatsapp"></i>
 </a>
 
@@ -164,9 +164,9 @@ function botResponse(text) {
     return;
   }
 
-  // Nombre de la doctora
+  // Nombre
   if(msg.includes("doctora") || msg.includes("nombre")) {
-    addMessage("👩 La doctora a cargo es Angélica María Bravo Castro.", "bot-message");
+    addMessage("👩 Angélica María Bravo Castro, especialista en odontología integral y estética dental.", "bot-message");
     return;
   }
 
@@ -176,7 +176,7 @@ function botResponse(text) {
     return;
   }
 
-  addMessage("🤖 Puedo ayudarte con: servicios, ubicación, horario, redes sociales, citas y nombre de la doctora.", "bot-message");
+  addMessage("🤖 Puedo ayudarte con: servicios, ubicación, horario, redes sociales, citas y especialista.", "bot-message");
 }
 </script>
 
