@@ -37,6 +37,11 @@ body {
   border-radius: 35px;
   text-decoration: none;
   font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.btn-principal:hover {
+  transform: scale(1.05);
 }
 
 /* SECCIONES */
@@ -58,6 +63,8 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 28px;
+  justify-items: center;
+  text-align: center;
 }
 
 .card {
@@ -66,13 +73,14 @@ h2 {
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
+  font-weight: 500;
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
 
-/* SOBRE */
+/* SOBRE NOSOTROS */
 .sobre-pro {
   background-color: #f9f9f9;
 }
@@ -88,6 +96,7 @@ h2 {
 .sobre-texto p {
   font-size: 17px;
   margin-bottom: 18px;
+  color: #333;
 }
 
 .sobre-galeria {
@@ -105,9 +114,15 @@ h2 {
 }
 
 /* CONTACTO */
-.contacto-simple p {
+.contacto-simple p, .contacto-simple a {
   font-size: 17px;
   margin-bottom: 15px;
+  color: #333; /* Todos los textos en negro */
+  text-decoration: none;
+}
+
+.contacto-simple a:hover {
+  text-decoration: underline;
 }
 
 .btn-facebook {
@@ -119,6 +134,11 @@ h2 {
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.btn-facebook:hover {
+  transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -127,6 +147,7 @@ footer {
   padding: 25px;
   font-size: 14px;
   color: #555;
+  text-align: center; /* Centrado */
 }
 
 /* WHATSAPP */
@@ -203,6 +224,7 @@ footer {
   margin-bottom: 12px;
   padding: 10px 14px;
   border-radius: 14px;
+  color: #333;
 }
 
 .user-message {
@@ -239,5 +261,8 @@ footer {
   .sobre-grid {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
